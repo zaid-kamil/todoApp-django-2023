@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Open Mateo</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .hero {
+            background-image: url('https://open-meteo.com/images/convective_clouds.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+        .tshadow {
+            text-shadow: 3px 2px 3px #222;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="fa fa-sun"></i> Open Mateo
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">Home <span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">API Docs</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mt-2 mt-lg-0">
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-brands fa-github fa-2x"></i></a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown open">
+                                <button class="btn dropdown-toggle nav-link" type="button" id="triggerId"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-moon fa-2x"></i>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="triggerId">
+                                    <button class="dropdown-item" href="#">
+                                        <i class="fa fa-sun"></i> Light
+                                    </button>
+                                    <button class="dropdown-item" href="#">
+                                        <i class="fa fa-moon"></i> Dark
+                                    </button>
+                                    <button class="dropdown-item" href="#">
+                                        <i class="fa fa-adjust"></i> Auto
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid hero text-center text-white p-5 mb-5">
+            <div class="row m-5">
+                <div class="col-12 ">
+                    <i class="fa fa-cloud-sun fa-5x mb-3 "></i>
+                    <div class="display-5 mb-3 tshadow ">
+                        Free Weather API
+                    </div>
+                </div>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-3 tshadow">
+                        Open-Meteo is an open-source weather API and offers free access for non-commercial use. No API
+                        key
+                        required. Start using it now!
+                    </p>
+                    <div class="d-flex gap-4 justify-content-center">
+                        <a class="btn btn-primary btn-lg px-4" href="#" role="button">Features</a>
+                        <a class="btn btn-outline-light btn-lg px-4" href="#" role="button">Documentation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="display-5">Accurate Weather Forecasts for Any Location</h1>
+                    <p class="lead">
+                        Open-Meteo partners with national weather services to bring you open data with high resolution,
+                        ranging from 1 to 11 kilometers. Our powerful APIs intelligently select the most suitable
+                        weather models for your specific location, ensuring accurate and reliable forecasts.
+                    </p>
+                    <p>With our user-friendly JSON API, accessing weather data has never been easier. Whether you're
+                        developing an application or seeking weather information for personal use, our APIs provide
+                        seamless integration and deliver the data you need in a simple and accessible format.</p>
+                    <p>Experience the precision and convenience of Open-Meteo's Forecast API, providing comprehensive
+                        weather information worldwide. Stay informed and make informed decisions with our reliable
+                        weather forecasts.</p>
+                    <div class="d-flex gap-4">
+                        <a class="btn btn-primary btn-lg" href="#" role="button">See Features</a>
+                        <a class="btn btn-outline-secondary btn-lg" href="#" role="button">Read the Docs</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 bg-dark rounded-3 text-white p-3">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-pills mb-3" id="myTab" role="tablist">
+                      <li class="nav-item  " role="presentation">
+                        <button class="btn btn-outline-light active me-1" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Forecast & Current</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="btn btn-outline-light me-1" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Last 10 days</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="btn btn-outline-light" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Historical data</button>
+                      </li>
+                    </ul>
+                    
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab"> home </div>
+                      <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab"> profile </div>
+                      <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab"> messages </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xxl-4">
+                    <div class="title-area d-flex align-items-center">
+                        <i class="fa fa-sun fa-3x bg-primary rounded-3 p-2 text-white me-3"></i>
+                        <h2>High Resolution</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4">Ducimus illo, nemo fugit vero iure earum! Accusantium sapiente in,
+                    suscipit tempora commodi eos? At ratione harum numquam, amet dignissimos, eveniet tenetur quae omnis
+                    delectus, consequatur est cupiditate molestiae perferendis!</div>
+                <div class="col-lg-6 col-xxl-4">Ea perferendis exercitationem ut fugiat dolore animi voluptatem
+                    perspiciatis explicabo optio, laborum id, distinctio ipsam praesentium dolor error aliquid. Rerum
+                    reiciendis provident ipsam ut delectus ad, facere quod consequatur harum?</div>
+                <div class="col-lg-6 col-xxl-4">Harum officia aut cupiditate eum sequi ipsam quam possimus nulla cumque
+                    vel non earum id laborum facere, molestias omnis et veritatis aperiam magni. Quibusdam quod officiis
+                    earum magni eius deleniti.</div>
+                <div class="col-lg-6 col-xxl-4">Accusamus soluta architecto nostrum distinctio fugiat adipisci harum,
+                    dolor sequi delectus inventore non, doloremque ab deserunt quos, quia sapiente corrupti! Molestias
+                    at dicta qui dignissimos, eveniet id velit magni amet.</div>
+                <div class="col-lg-6 col-xxl-4">Suscipit vero quo corporis, magni libero iusto dolor numquam praesentium
+                    laudantium voluptas alias repudiandae maiores hic recusandae eos. Sint eos exercitationem aliquid
+                    sed voluptatum repellat deserunt quia aperiam atque officia.</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6">
+                    <div class="h-100 p-5 text-white bg-primary border rounded-3">
+                        <h2>Change the background</h2>
+                        <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron
+                            look. Then,
+                            mix and match with additional component themes and more.</p>
+                        <button class="btn btn-outline-primary" type="button">Example button</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="h-100 p-5 bg-primary border rounded-3">
+                        <h2>Add borders</h2>
+                        <p>Or, keep it light and add a border for some added definition to the boundaries of your
+                            content. Be sure
+                            to look under the hood at the source HTML here as we've adjusted the alignment and sizing of
+                            both
+                            column's content for equal-height.</p>
+                        <button class="btn Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then,
+                        mix and match with additional component themes and more." type="button">Example button</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facere
+                numquam, illum hic similique voluptatum illo in minus vero voluptatem! Molestias in delectus fuga natus
+                soluta corrupti tempore eius cumque.</div>
+            <div class="col-xs-6 col-sm-3">Dolores reiciendis autem enim dolorum ullam minus quas sunt quo, quos eaque
+                accusantium, quisquam similique saepe pariatur omnis voluptatum corporis excepturi assumenda sit.
+                Placeat, fugiat. Soluta fugit quidem non architecto.</div>
+            <div class="col-xs-6 col-sm-3">Explicabo ut molestias nisi, dolore accusamus excepturi, iure rerum quia
+                incidunt autem ipsam officiis ipsa possimus assumenda fugit dolorem reprehenderit laborum ab nam.
+                Veritatis saepe cupiditate eligendi praesentium, voluptas perspiciatis.</div>
+            <div class="col-xs-6 col-sm-3">Dolore ut, nemo magni maxime quis labore voluptatibus magnam earum accusamus
+                perspiciatis possimus delectus velit facere, ipsa sequi tempore, iusto non facilis! Voluptatum fugit,
+                velit officia ipsam cum quidem ex!</div>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
