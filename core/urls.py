@@ -22,4 +22,5 @@ urlpatterns = [
     path('', views.index, name="home"), # for home page
     path('todo/add', views.add_task, name="add"), # for adding task
     path('todo/update/<int:id>', views.update_task, name="update"),
+    path('todo/delete/<int:id>', views.delete_task, name="delete"),
 ]
