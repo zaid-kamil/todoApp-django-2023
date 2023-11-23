@@ -12,13 +12,14 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <!-- FontAwesome 6.2.0 CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- (Optional) Use CSS or JS implementation -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
-      integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/htmx.org@1.9.9"></script>
 </head>
 
 <body>
@@ -26,16 +27,22 @@
     <!-- place navbar here -->
   </header>
   <main>
-    <div class="container">
+    <div class="container-fluid">
+      <!-- jumbotron -->
+      <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-1">
+          <h1 class="display-5 fw-bold text-center">Django Todo List</h1>
+        </div>
+      </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 mx-auto">
           {% include 'todo_list.html' %}
         </div>
       </div>
     </div>
   </main>
   <footer>
-    <!-- place footer here -->
+    
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

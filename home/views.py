@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Task
+from django_htmx.http import HttpResponseClientRefresh
 
 # Create your views here.
 def index(request):
@@ -13,12 +14,15 @@ def add_task(request):
         task = request.POST.get('task')
         if len(task) >= 2:
             Task.objects.create(title=task)
-    redirect('home')
+    return HttpResponseClientRefresh()
 
 def update_task(request, id):
-    context = {}
-    return render(request, 'todo_list.html', context)
+    print('checkbox clicked')
+    print('the id is', id)
+    Task.objects.filter(id=id).update(is_completed=True) # filter and update
+    return HttpResponseClientRefresh()
 
 def delete_task(request, id):
-    pass
+    Task.objects.filter(id=id).delete() # filter and delete
+    return HttpResponseClientRefresh()
     
